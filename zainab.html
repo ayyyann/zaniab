@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zainab</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fce0f3; /* Soft Pink */
+        }
+        
+        .header {
+            background-color: #8d3c63; /* Dark Pink */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 0 0 10px 10px;
+            font-size: 1.5em;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .container {
+            padding: 80px 20px 20px; /* Adjust top padding to accommodate fixed header */
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background-color: #8d3c63; /* Dark Pink */
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        .card p {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Assalamualaikum Zainab </div>
+    <div class="container">
+        <script>
+            // Prompt for password
+            var password = prompt("Hello zainab Password is urs DOB dd/mm/yyyy");
+
+            // Check if password is correct
+            if (password !== '13022003') {
+                alert("Incorrect password. Please try again.");
+                window.location.reload(); // Reload the page if the password is incorrect
+            }
+        </script>
+        <div class="card">
+            <h3>Card Title</h3>
+            <p>This is a sample card content. You can add more cards by copying this code.</p>
+        </div>
+    </div>
+</body>
+</html>
